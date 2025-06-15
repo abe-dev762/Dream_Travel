@@ -32,3 +32,33 @@ button, input[type="submit"]{
     justify-content: center;
     align-items: center;
 }
+.text{
+    font-weight: 400;
+    opacity: 0.9;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.form-ctrl{
+    width: 100%;
+    margin: 0.5rem 0;
+    max-width: 500px;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: transparent;
+}
+.formBtn{
+    padding: 0.6rem 2.4rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    background-color: var(--green);
+    color: #fff;
+    border: 1px solid var(--green);
+}
+.formBtn:hover{
+    opacity: 0.9;
+    transition: var(--trans);
+}

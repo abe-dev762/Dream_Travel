@@ -1,0 +1,194 @@
+:root{
+--green: #1ec6b6;
+--light-grey: #f7f7ff;
+--dark: #0e1010;
+--trans: all 0.3s ease-in-out;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 999;
+    background: transparent;
+}
+
+.navbar .container{
+    justify-content: space-between;
+}
+
+.siteBrand{
+    color: #f7f7ff;
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.siteBrand span{
+    font-weight: 300;
+}
+
+#navbarShowBtn{
+    background: transparent;
+    color: #f7f7ff;
+    font-size: 2rem;
+    opacity: 0.9;
+    transition: var(--trans);
+    border: none;
+}
+
+#navbarShowBtn:hover{
+    opacity: 1;
+}
+
+#navbarCollapse{
+    background-color: var(--green);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    padding: 2rem;
+    transition: var(--trans);
+    transform: translateX(100%);
+}
+
+.navbarCollapse-rmw{
+    transform: translateX(0)!important;
+}
+
+#navbarCloseBtn{
+    background: none;
+    color: #f7f7ff;
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    transition: var(--trans);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    border: none;
+}
+
+#navbarCLoseBtn:hover{
+    background-color: #f7f7ff;
+    color: var(--green);
+}
+
+.navbarNav{
+    margin-top: 5rem;
+}
+.navItem{
+    margin: 1.6rem 0;
+}
+.navLink{
+    color:#f7f7ff;
+    font-size: 1.2rem;
+    transition: var(--trans);
+}
+.navLink:hover{
+    opacity: 0.8;
+}
+
+header{
+    min-height: 100vh;
+    padding-top: 7rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/background-img.jpg) center/cover no-repeat;
+    flex-direction: column;
+    color: #f7f7ff;
+    text-align: center;
+}
+.header-title h1{
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    animation: bounce-in-top 1.1s both;
+}
+.header-title p{
+    margin: 1.8rem auto;
+    max-width: 700px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+@keyframes bounce-in-top{
+    0%{
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38%{
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+    55%{
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72%{
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    81%{
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+    90%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95%{
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100%{
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+
+.header-form{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    border-radius: 0.2rem;
+}
+.header-form h3{
+    font-size: 1.2rem;
+}
+.header-form form{
+    flex-direction: column;
+    margin-top: 1.8rem;
+}
+.header-form form .form-ctrl{
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.header-form input[type = "date"]{
+    text-transform: uppercase;
+}
+.header-form input:not([type = "submit"])::placeholder{
+    color: #f7f7ff;
+}
+::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+.header-form .formBtn{
+    margin-top: 0.8rem;
+}
+.navbar-cng{
+    background-color: #f7f7ff;
+    box-shadow: 0px 4px 5px 0px rgba(48, 48, 48, 0.2);
+    transition: var(--trans);
+}
+.navbar-cng .siteBrand{
+    color: var(--dark);
+}
+.navbar-cng .siteBrand span{
+    color: var(--green);
+}
+.navbar-cng #navbarShowBtn{
+    color: var(--green);
+}
