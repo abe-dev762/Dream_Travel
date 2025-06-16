@@ -98,7 +98,7 @@
 header{
     min-height: 100vh;
     padding-top: 7rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/background-img.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/bg-img.jpg) center/cover no-repeat;
     flex-direction: column;
     color: #f7f7ff;
     text-align: center;
@@ -189,8 +189,29 @@ header{
     color: var(--dark);
 }
 .navbar-cng .siteBrand span{
-    color: var(--green);
+    color:hsla(244, 96%, 46%, 0.984) ;
 }
 .navbar-cng #navbarShowBtn{
     color: var(--green);
 } 
+/*for featured row*/
+
+.featured-item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: var(--trans);
+}
+.featured-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8)99%, rgba(0, 0, 0, 0.8)100%);
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+}

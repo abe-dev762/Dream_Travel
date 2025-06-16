@@ -68,3 +68,38 @@ button, input[type="submit"]{
     animation: none!important;
     transition: none!important;
 }
+/*featured place*/
+.featured-place{
+    padding: 4rem;
+}
+.img{
+    width: 100%;
+    display: block;
+}
+.title-wrapper{
+    text-align: center;
+    padding: 1.4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.lg-title{
+    font-size: 1.8rem;
+}
+.sm-title{
+    display: block;
+    color: #787878;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+.my-1{
+    margin: 2rem 0;
+}
+.shadow:hover{
+    box-shadow: 0px 0px 18px -4px rgba(108, 108, 108, 0.63);
+}
