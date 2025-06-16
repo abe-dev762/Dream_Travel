@@ -55,7 +55,9 @@
     transform: translateX(100%);
 }
 
-.navbarCollapse-rmw{
+.navbar-collapse-rmw{
+    -webkit-transform: translateX(0)!important;
+    -ms-transform: translateX(0)!important;
     transform: translateX(0)!important;
 }
 
@@ -191,4 +193,4 @@ header{
 }
 .navbar-cng #navbarShowBtn{
     color: var(--green);
-}
+} 

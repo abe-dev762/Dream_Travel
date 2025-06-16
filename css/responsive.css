@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px){
+    .header-title p{
+        font-size: 1.4rem;
+    }
+}
+@media screen and(min-width: 992px){
+    .header-title p{
+        font-size: 4rem;
+    }
+    .header-form form{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .header-form .form-ctrl .header-form .formBtn{
+        margin: 0 0.5rem;
+    }
+    /*for navbar*/
+    #navbarShowBtn{
+        display: none;
+    }
+    #navbarCollapse{
+        display: block!important;
+        background-color: transparent;
+        transform: translateX(0);
+        height: auto;
+        padding: 0;
+        position: static;
+        width: 100%;
+    }
+    #navbarCloseBtn{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .nav-item{
+        margin: 0;
+        margin-left: 2rem;
+    }
+    /*on scroll*/
+    .navbar-cng .navbar-nav .navLink{
+        color: var(--dark);
+    }
+}
+

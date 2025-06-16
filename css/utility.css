@@ -62,3 +62,9 @@ button, input[type="submit"]{
     opacity: 0.9;
     transition: var(--trans);
 }
+
+/*stop animation and transition*/
+.resize-animation-stopper *{
+    animation: none!important;
+    transition: none!important;
+}
